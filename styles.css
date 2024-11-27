@@ -1,0 +1,329 @@
+:root {
+  --width: 960px;  
+  --height: 640px; 
+  --offset: 35px;
+}
+
+html, body {
+  height: 100%;        /* Убедитесь, что html и body занимают всю высоту экрана */
+  margin: 0;           /* Убираем отступы */
+  padding: 0;          /* Убираем внутренние отступы */
+  overflow: hidden;    /* Отключаем прокрутку */
+}
+
+body {
+  background-color: #fca311;
+}
+.frame {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: translate(calc(-48%), calc(-38%)) */
+}
+
+.heart-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.heart-container {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+.heart-container img {
+  width: 70px;
+  height: 70px;
+}
+
+.heart {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  transform: rotate(45deg);
+  animation: spin 3s linear infinite;
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  top: 0;
+  left: -25px;
+}
+
+.heart-container:nth-child(1) {
+  transform: translate(calc((30 * var(--width)) / 100 - var(--offset)), calc((0 * var(--height)) / 100 - var(--offset))); /* Коррекция 1 */
+}
+
+.heart-container:nth-child(2) {
+  transform: translate(calc((50 * var(--width)) / 100 - var(--offset)), calc((15 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(3) {
+  transform: translate(calc((70 * var(--width)) / 100 - var(--offset)), calc((0 * var(--height)) / 100 - var(--offset))); /* Коррекция 3 */
+}
+
+.heart-container:nth-child(4) {
+  transform: translate(calc((90 * var(--width)) / 100 - var(--offset)), calc((10 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(5) {
+  transform: translate(calc((99 * var(--width)) / 100 - var(--offset)), calc((34 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(6) {
+  transform: translate(calc((80 * var(--width)) / 100 - var(--offset)), calc((70 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(7) {
+  transform: translate(calc((50 * var(--width)) / 100 - var(--offset)), calc((100 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(8) {
+  transform: translate(calc((20 * var(--width)) / 100 - var(--offset)), calc((70 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(9) {
+  transform: translate(calc((1 * var(--width)) / 100 - var(--offset)), calc(((34 * var(--height)) / 100 - var(--offset))));
+}
+
+.heart-container:nth-child(10) {
+  transform: translate(calc((10 * var(--width)) / 100 - var(--offset)), calc((10 * var(--height)) / 100 - var(--offset)));
+}
+
+/* Промежуточные элементы */
+.heart-container:nth-child(11) {
+  transform: translate(calc((43 * var(--width)) / 100 - var(--offset)), calc((10 * var(--height)) / 100 - var(--offset))); /* Коррекция 11 */
+}
+
+.heart-container:nth-child(12) {
+  transform: translate(calc((63 * var(--width)) / 100 - var(--offset)), calc((5 * var(--height)) / 100 - var(--offset))); /* Коррекция 12 */
+}
+
+.heart-container:nth-child(13) {
+  transform: translate(calc((76.5 * var(--width)) / 100 - var(--offset)), calc((3 * var(--height)) / 100 - var(--offset))); /* Корректируем 13 */
+}
+
+.heart-container:nth-child(14) {
+  transform: translate(calc((93 * var(--width)) / 100 - var(--offset)), calc((18 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(15) {
+  transform: translate(calc((90 * var(--width)) / 100 - var(--offset)), calc((52.5 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(16) {
+  transform: translate(calc((65 * var(--width)) / 100 - var(--offset)), calc((85 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(17) {
+  transform: translate(calc((35 * var(--width)) / 100 - var(--offset)), calc((85 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(18) {
+  transform: translate(calc((10 * var(--width)) / 100 - var(--offset)), calc((52.5 * var(--height)) / 100 - var(--offset)));
+}
+
+
+
+.heart-container:nth-child(20) {
+  transform: translate(calc((23 * var(--width)) / 100 - var(--offset)), calc((2.5 * var(--height)) / 100 - var(--offset))); /* Корректируем 20 */
+}
+
+.heart-container:nth-child(21) {
+  transform: translate(calc((5 * var(--width)) / 100 - var(--offset)), calc((44.5 * var(--height)) / 100 - var(--offset))); /* Между 9 и 18 */
+}
+
+.heart-container:nth-child(22) {
+  transform: translate(calc((15 * var(--width)) / 100 - var(--offset)), calc((60 * var(--height)) / 100 - var(--offset))); /* Между 18 и 8 */
+}
+
+.heart-container:nth-child(23) {
+  transform: translate(calc((28 * var(--width)) / 100 - var(--offset)), calc((78 * var(--height)) / 100 - var(--offset))); /* Между 8 и 17 */
+}
+
+.heart-container:nth-child(24) {
+  transform: translate(calc((42.5 * var(--width)) / 100 - var(--offset)), calc((92.5 * var(--height)) / 100 - var(--offset))); /* Между 17 и 7 */
+}
+
+.heart-container:nth-child(25) {
+  transform: translate(calc((57.5 * var(--width)) / 100 - var(--offset)), calc((92.5 * var(--height)) / 100 - var(--offset))); /* Между 7 и 16 */
+}
+
+.heart-container:nth-child(26) {
+  transform: translate(calc((72.5 * var(--width)) / 100 - var(--offset)), calc((76.5 * var(--height)) / 100 - var(--offset))); /* Между 16 и 6 */
+}
+
+.heart-container:nth-child(27) {
+  transform: translate(calc((85 * var(--width)) / 100 - var(--offset)), calc((60 * var(--height)) / 100 - var(--offset))); /* Между 6 и 15 */
+}
+
+.heart-container:nth-child(28) {
+  transform: translate(calc((95 * var(--width)) / 100 - var(--offset)), calc((43.75 * var(--height)) / 100 - var(--offset))); /* Между 5 и 15 */
+}
+
+.heart-container:nth-child(29) {
+  transform: translate(calc((57 * var(--width)) / 100 - var(--offset)), calc((10 * var(--height)) / 100 - var(--offset))); /* Между 12 и 3 */
+}
+
+.heart-container:nth-child(30) {
+  transform: translate(calc((36.5 * var(--width)) / 100 - var(--offset)), calc((4 * var(--height)) / 100 - var(--offset))); /* Между 11 и 1 */
+}
+
+.heart-container:nth-child(31) {
+  transform: translate(calc((83 * var(--width)) / 100 - var(--offset)), calc((7 * var(--height)) / 100 - var(--offset))); /* Новый элемент между 3 и 4 */
+}
+
+.heart-container:nth-child(32) {
+  transform: translate(calc((16.5 * var(--width)) / 100 - var(--offset)), calc((6 * var(--height)) / 100 - var(--offset))); /* Новый элемент между 10 и 1 */
+}
+
+.heart-container:nth-child(33) {
+  transform: translate(calc((96 * var(--width)) / 100 - var(--offset)), calc((26 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(19) {
+  transform: translate(calc((6.5 * var(--width)) / 100 - var(--offset)), calc((17 * var(--height)) / 100 - var(--offset)));
+}
+
+.heart-container:nth-child(34) {
+  transform: translate(calc((3 * var(--width)) / 100 - var(--offset)), calc((25 * var(--height)) / 100 - var(--offset)));
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg) rotate(45deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotate(45deg);
+  }
+}
+
+.video-container {
+  /* width: 1200px; 
+  height: 660px; */
+  width: var(--width);
+  height: var(--height);
+  clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%); /* Форма сердца */
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Обеспечивает, чтобы видео не искажалось */
+}
+
+.omk {
+  background-color: #ff477e;
+  color: #fae0e4;
+  border: 0;
+  z-index: 2;
+}
+
+.omk:hover, .omk:active {
+  background-color: #ff0a54 !important;
+  border: 0;
+}
+
+.mk {
+  background-color: #ff758f;
+  color: #fae0e4;
+  border: 0;
+}
+
+.mk:hover, .mk:active {
+  background-color: #c9184a !important;
+  border: 0;
+}
+
+.btns {
+  width: 100vw;
+  justify-content: space-around;
+  display: flex;
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  gap: 40px;
+  z-index: 2;
+  transform: translate(-50%);
+}
+
+.kitty{ 
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  z-index: 3;
+  animation: appearence 3s linear;
+}
+
+.kitty img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 50px;
+  text-shadow: 10px 10px 10px rgba(100, 30, 43, 0.5);
+  color: #fff;
+}
+
+@keyframes appearence {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    transform: translate(-50%, 0%);
+  }
+}
+
+.notactive {
+  display: none;
+}
+
+.apologize:hover {
+  cursor: pointer;
+}
+.apologize h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.apologize{
+  display: flex;
+  align-items: center;  
+  gap: 10px;
+  color: #ffc4cf;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
