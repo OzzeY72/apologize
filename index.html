@@ -118,6 +118,10 @@
     const iid2 = setTimeout(() => {
       videoElement.src = getRandomVideo();
       videoElement.play();
+      const iid3 = setInterval(() => {
+        videoElement.src = getRandomVideo();
+        videoElement.play();
+      }, 5000); 
     }, 4500); 
   }
 
