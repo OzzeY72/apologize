@@ -70,7 +70,10 @@
 <script>
   var audioElement = document.getElementById("background-audio");
   audioElement.volume = 0.20; 
-  audioElement.play(); 
+  const iid4 = setInterval(() => {
+    audioElement.play(); 
+  }, 2000);
+  
 </script>
 <script>
     const videos = [
